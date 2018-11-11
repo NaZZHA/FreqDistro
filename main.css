@@ -1,17 +1,12 @@
-textarea {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    resize: none;
-    color: white;
-    background-color: rgba(0,0,0,0.5);
- }
-
 body {
     background-color: #6a6c70;
     color: white;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+h1 {
+    color: white;   
 }
 
 .main {
