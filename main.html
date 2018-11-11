@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="Scripts/FreqDistro.js"></script>
+    <title>FrequencyDistroBot</title>
+</head>
+<body>
+    <header>
+            <h1>Frequency Distro</h1>
+    </header>
+        <div id="results">
+            <table id="valueTable">
+                <tr>
+                    <td>Range </td>
+                    <td></td>
+                </tr>
+    
+                <tr>
+                    <td>No. Of Intervals </td>
+                    <td></td>
+                </tr>
+    
+                <tr>
+                    <td>Class Size </td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <table id="frequencyTable">
+            </table>
+        </div>
+
+    <div class="main">
+        <form>
+            <p>Enter Number Here</p>
+            <input type="number" id="val"></input>
+            <br>
+        </form>
+        <br>
+        <p id='database'></p><br>
+        <button onclick="AddToDatabase()">Add To Database</button>
+        <button onclick="GetOutputData(database)"">Count</button>
+        <button onclick="ResetDatabase()">Reset Values</button>
+    </div>
+
+
+
+</body>
+</html>
