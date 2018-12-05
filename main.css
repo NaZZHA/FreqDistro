@@ -1,27 +1,35 @@
 body {
     background-color: #6a6c70;
     color: white;
-    margin-left: 5%;
-    margin-right: 5%;
+
 }
 
 .main {
+    margin-top: 1%;
+    margin-left: 42%;
+    margin-right: 5%;
     text-align: center;
-    position: absolute;
+    position: relative;
     width: 300px;
     height: 200px;
     z-index: 15;
-    top: 50%;
-    left: 50%;
-    margin: -100px 0 0 -150px;
+
 }
 
-.results{
+#results{
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    text-align: center;
     display: none;
+    border: 2px solid black;
+    padding: 10px;
+    padding-bottom: 25px;
+    margin-left: 37%;
+    width: 25%;
 }
 
 table, th, td {
-    
     padding: 5px;
+    text-align: center;
     border: 1px solid black;
  }

@@ -128,6 +128,7 @@ function DisplayData(){
     document.getElementById('frequencyTable').innerHTML = "";
     valTable = document.getElementById("valueTable");
     processedDataTable = document.getElementById("frequencyTable");
+    titles = ['intervals', 'frequency', 'class mark', 'rel. frequency', 'class boundary', '>CF', '<CF']
 
     results.style.display="block";
 
@@ -135,7 +136,7 @@ function DisplayData(){
         valTable.rows[i].cells[1].innerHTML = vls[i];
     }
 
-    for(i=0; i < processedData[0].length; i++){
+    for(i=0; i <= processedData[0].length; i++){
         processedDataTable.insertRow(0);
     }
 
@@ -148,9 +149,14 @@ function DisplayData(){
         processedDataTable.rows[i].insertCell(0);
         processedDataTable.rows[i].insertCell(0);
     }
-    for(outer=0; outer < processedDataTable.rows.length; outer++){
+
+    for(i=0; i < titles.length; i++){
+        processedDataTable.rows[0].cells[i].innerHTML = titles[i]
+    }
+
+    for(outer=1; outer < processedDataTable.rows.length; outer++){
         for(inner=0; inner < 7; inner++){
-                processedDataTable.rows[outer].cells[inner].innerHTML = processedData[inner][outer];
+                processedDataTable.rows[outer].cells[inner].innerHTML = processedData[inner][outer-1];
         }
     }
 }
